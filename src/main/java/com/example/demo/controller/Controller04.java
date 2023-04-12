@@ -70,7 +70,43 @@ public class Controller04 {
 		
 	}
 	
+	@RequestMapping("/link6")
+	public void method6(@RequestParam("email") String email) {
+		System.out.println(email);
+	}
+	
+	@RequestMapping("/link7")
+	public void method7(@RequestParam int age) {
+		System.out.println(age);
+	}
+	
+	@RequestMapping("/link8")
+	public void method8(String address) {
+		System.out.println(address);
+	}
+	
+	@RequestMapping("/link9")
+	public void method9(double score) {
+		System.out.println(score);
+	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
