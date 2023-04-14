@@ -1,0 +1,9 @@
+SELECT * FROM Customers
+WHERE CustomerID >=10 AND CustomerID < 20;
+
+SELECT * FROM Customers
+WHERE CustomerID BETWEEN 10 AND 19;
+
+SELECT * FROM Products
+WHERE Price BETWEEN 10.00 AND 19.99;
+
