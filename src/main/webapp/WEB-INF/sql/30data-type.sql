@@ -1,0 +1,98 @@
+CREATE TABLE MyTable02(
+	Col1 VARCHAR(3), Col2 VARCHAR(5)
+);
+
+SELECT * FROM MyTable02;
+
+INSERT INTO MyTable02 (Col1, Col2)
+VALUES ('abc', 'abcde');
+
+INSERT INTO MyTable02 (Col1, Col2)
+VALUES ('ab', 'abcd');
+
+INSERT INTO MyTable02 (Col1, Col2)
+VALUES ('abcd', 'abcdef');
+
+CREATE TABLE MyTable03(
+Col1 VARCHAR(10), Col2 VARCHAR(100), Col3 VARCHAR(1000)
+);
+
+INSERT INTO MyTable03 (Col1, Col2, Col3)
+VALUES ('wjdnwd', 'kjfvnkjvnuwjj', 'cjjcwuejjs12388');
+
+SELECT * FROM MyTable03;
+DESC MyTable03;
+
+DELETE FROM MyTable03;
+
+
+CREATE TABLE MyTable04(
+Col1 INT
+);
+DESC MyTable04;
+INSERT INTO MyTable04 (Col1) 
+VALUES (33);
+INSERT INTO MyTable04 (Col1)
+VALUES (1234567890);
+INSERT INTO MyTable04 (Col1)
+VALUES (999999999);
+INSERT INTO MyTable04 (Col1)
+VALUES (3.14);
+SELECT * FROM MyTable04;
+
+CREATE TABLE MyTable05(
+Col1 INT, Col2 INT
+);
+DESC MyTable05;
+
+CREATE TABLE MyTable06(
+Col1 DEC(5, 2), Col2 DEC(3, 1)
+);
+
+INSERT INTO MyTable06 (Col1)
+VALUES (999.99);
+
+INSERT INTO MyTable06 (Col1)
+VALUES (-999.99);
+INSERT INTO MyTable06 (Col1)
+VALUES (1999.99);
+INSERT INTO MyTable06 (Col1)
+VALUES (999.999);
+
+SELECT * FROM MyTable06;
+
+CREATE TABLE MyTable07(
+Col1 DEC(10,3), Col2 DEC(5,5)
+);
+
+INSERT INTO MyTable07 (Col1, Col2)
+VALUES ( 128312.223, 0.00222);
+
+SELECT * FROM MyTable07;
+
+CREATE TABLE MyTable08(
+Col1 DATE, Col2 DATETIME
+);
+
+DESC MyTable08;
+INSERT INTO MyTable08 (Col1)
+VALUES ('1000-01-01');
+SELECT * FROM MyTable08;
+
+SELECT NOW();
+
+INSERT INTO MyTable08 (Col2)
+VALUES ('9999-12-31 23:59:59');
+
+INSERT INTO MyTable08 (Col1, Col2)
+VALUES (now(), now());
+SELECT * FROM MyTable08;
+
+CREATE TABLE MyTable09(
+Name VARCHAR(20), Gender VARCHAR(1), BirthDate Date, Score DEC(5, 2), Extra VARCHAR(1000)
+);
+
+INSERT INTO MyTable09(Name, Gender, BirthDate, Score, Extra)
+VALUES ('손흥민', '남', '1993-04-18', 33.5, '축구선수');
+
+SELECT * FROM MyTable09;

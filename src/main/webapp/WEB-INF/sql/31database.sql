@@ -1,0 +1,18 @@
+CREATE DATABASE mydb;
+USE mydb;
+CREATE TABLE MyTable11(
+Title VARCHAR(10), Price INT
+);
+DROP DATABASE mydb;
+USE w3schools;
+
+CREATE DATABASE mydb1;
+CREATE TABLE NewTable01(
+Col1 INT, Col2 VARCHAR(255)
+);
+SELECT * FROM NewTable01;
+DROP DATABASE mydb1;
+USE w3schools;
+
+USE test;
+SELECT * FROM w3schools.MyTable09;
