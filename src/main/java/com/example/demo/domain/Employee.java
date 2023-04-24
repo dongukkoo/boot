@@ -15,4 +15,3 @@ public class Employee {
 	
 	
 }
-//EmployeeID id ,LastName, FirstName, BirthDate birth, Photo, Notes

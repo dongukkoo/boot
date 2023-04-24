@@ -1,0 +1,26 @@
+SELECT CustomerName FROM Customers;
+
+SELECT * FROM MyTable38;
+DESC MyTable38;
+
+CREATE TABLE MyTable37(
+Age INT, Name VARCHAR(50), Score DEC(10,2)
+);
+
+INSERT INTO MyTable36 (Col1, Col2, Col3)
+VALUES (22, 'hello', 3.14);
+
+ALTER TABLE MyTable37 CHANGE Col3 Score DEC(10,2);
+
+CREATE TABLE MyTable38(
+Col1 INT, Col2 INT, Col3 VARCHAR(200), Col4 VARCHAR(200), Col5 DEC(10, 3), Col6 DEC(10,3)
+);
+
+CREATE TABLE MyTable40(
+Id INT PRIMARY KEY AUTO_INCREMENT, Age INT, Name VARCHAR(30), Score DEC(10, 3)
+);
+INSERT INTO MyTable39 (Col2, Col3)
+VALUES ('hello', 99);
+
+SELECT * FROM Customers;
+DESC MyTable39;
