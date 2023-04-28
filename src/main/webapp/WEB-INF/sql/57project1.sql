@@ -9,3 +9,9 @@ CREATE TABLE Board(
     writer VARCHAR(20),
     inserted DATETIME DEFAULT NOW()    
 );
+DESC Board;
+
+INSERT INTO Board (title, body, writer)
+VALUES ('zzzzzz', 'xxxxxx', 'yyyyy');
+
+SELECT * FROM Board ORDER BY id DESC;
