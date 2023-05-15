@@ -53,6 +53,7 @@ INSERT INTO MemberAuthority
 VALUES ('111', 'admin');
 
 DESC Member;
+SELECT * FROM Member;
 
 SELECT *
 FROM Member m LEFT JOIN MemberAuthority ma ON m.id = ma.memberId
